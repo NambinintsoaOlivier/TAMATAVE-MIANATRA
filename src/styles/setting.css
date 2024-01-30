@@ -12,3 +12,6 @@ main {
 body {
   font-family: ubuntu;
 }
+.container-fluid {
+  --bs-gutter-x: 0rem;
+}
