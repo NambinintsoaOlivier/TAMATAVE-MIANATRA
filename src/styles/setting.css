@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: ubuntu;
+  src: url("../styles/font/Ubuntu/Ubuntu-Regular.ttf");
+}
+main {
+  margin-top: 60px;
+}
+body {
+  font-family: ubuntu;
+}

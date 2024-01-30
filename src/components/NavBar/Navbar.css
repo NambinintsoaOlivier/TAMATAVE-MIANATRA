@@ -1,0 +1,13 @@
+.navbar {
+  background-color: #dfa100;
+}
+
+.custom-nav-link {
+  color: #ffffff;
+}
+
+.active {
+  font-weight: 500 !important;
+  text-decoration: underline !important;
+  text-underline-position: under;
+}
