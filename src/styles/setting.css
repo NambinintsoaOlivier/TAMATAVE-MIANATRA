@@ -16,3 +16,8 @@ body {
 .container-fluid {
   --bs-gutter-x: 0rem;
 }
+.btn {
+  cursor: pointer !important;
+  border-radius: 20px !important;
+  box-shadow: 0px 5px 5px 0px #242424 !important;
+}

@@ -4,10 +4,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 80px;
+  margin-bottom: 40px;
 }
 .home-content-item {
   width: 100%;
-  background-color: #6161618f;
+  background-color: #61616173;
   position: relative;
 }
 .home-content-item > * {
@@ -59,11 +60,6 @@
 }
 .btn-create-account:hover {
   background-color: #313131 !important;
-}
-.btn {
-  cursor: pointer !important;
-  border-radius: 20px !important;
-  box-shadow: 0px 4px 6px 0px #242424;
 }
 
 /* responsive Mobile */
