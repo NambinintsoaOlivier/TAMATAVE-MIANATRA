@@ -4,6 +4,8 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Login from "./components/Login/Login";
+import Signup from "./components/Signup/Signup";
+import Formations from "./pages/Formations";
 
 const App = () => {
   return (
@@ -13,6 +15,8 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="*" element={<NotFound />} />
           <Route path="login" element={<Login />} />
+          <Route path="signup" element={<Signup />} />
+          <Route path="formations" element={<Formations />} />
         </Route>
       </Routes>
     </BrowserRouter>

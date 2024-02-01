@@ -1,15 +1,15 @@
 import React from "react";
 
-const NotFound = () => {
+const Formations = () => {
   return (
     <>
       <main>
         <div className="container">
-          <h1>404 Not found</h1>
+          <h2>En cours de construction...</h2>
         </div>
       </main>
     </>
   );
 };
 
-export default NotFound;
+export default Formations;

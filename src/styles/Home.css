@@ -31,7 +31,9 @@
   width: 350px;
 }
 .home-menu {
-  height: 250px;
+  height: 400px;
+  width: 400px;
+  padding: 20px;
 }
 .btn-login,
 .btn-create-account,
@@ -72,5 +74,8 @@
   .btn-search {
     width: 200px;
     font-size: 12px !important;
+  }
+  .home-menu {
+    width: 300px;
   }
 }

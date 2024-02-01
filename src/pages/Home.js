@@ -12,13 +12,13 @@ const Home = () => {
             <div className="home-content-item d-flex flex-column align-items-center">
               <img src={logoHome} alt="" />
               <div className="home-menu d-flex flex-column align-items-center justify-content-center">
-                <Link to={""} className="btn btn-search mb-3">
+                <Link to={"/formations"} className="btn btn-search mb-3">
                   Trouver du formation
                 </Link>
-                <Link to={"login"} className="btn btn-login mb-3">
+                <Link to={"/login"} className="btn btn-login mb-3">
                   Se connecter
                 </Link>
-                <Link to={""} className="btn btn-create-account mb-3">
+                <Link to={"/signup"} className="btn btn-create-account mb-3">
                   Créer un compte
                 </Link>
               </div>

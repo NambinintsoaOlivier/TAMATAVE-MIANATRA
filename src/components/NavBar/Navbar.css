@@ -2,12 +2,18 @@
   background-color: #dfa100;
 }
 
-.custom-nav-link {
-  color: #ffffff;
+.nav-item > * {
+  text-decoration: none !important;
+  color: #d9d9d9 !important;
 }
 
+.nav-item {
+  margin-right: 20px;
+  font-size: 18px;
+}
 .active {
   font-weight: 500 !important;
   text-decoration: underline !important;
   text-underline-position: under;
+  color: #101010d5 !important;
 }

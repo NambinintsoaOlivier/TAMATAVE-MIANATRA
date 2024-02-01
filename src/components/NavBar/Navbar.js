@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  const [isMenuOpen, setMenuOpen] = useState();
+
+  const handleItemClick = () => {
+    setMenuOpen(false);
+  };
   return (
     <>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top">
@@ -14,32 +20,35 @@ const Navbar = () => {
             aria-controls="navbarCollapse"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            onClick={() => setMenuOpen(!isMenuOpen)}
           >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse justify-content-end"
+            className={`collapse navbar-collapse justify-content-end ${
+              isMenuOpen ? "open" : ""
+            }`}
             id="navbarCollapse"
           >
             <ul class="navbar-nav mb-2 mb-md-0">
-              <li class="nav-item">
-                <a
+              <li class="nav-item" onClick={handleItemClick}>
+                <NavLink
+                  to={"/"}
                   class="nav-link custom-nav-link active"
                   aria-current="page"
-                  href="/"
                 >
                   Home
-                </a>
+                </NavLink>
               </li>
-              <li class="nav-item">
-                <a class="nav-link custom-nav-link" href="/">
+              <li class="nav-item" onClick={handleItemClick}>
+                <NavLink class="nav-link custom-nav-link" to={"/formations"}>
                   Formations
-                </a>
+                </NavLink>
               </li>
-              <li class="nav-item">
-                <a class="nav-link custom-nav-link" href="/">
+              <li class="nav-item" onClick={handleItemClick}>
+                <NavLink class="nav-link custom-nav-link" to={"/login"}>
                   Se connecter
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>

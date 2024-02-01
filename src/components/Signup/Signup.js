@@ -1,9 +1,8 @@
 import React from "react";
-import "./Login.css";
 import logoHome from "../../styles/images/logoTamMian.png";
 import { Link } from "react-router-dom";
 
-const Login = () => {
+const Signup = () => {
   return (
     <>
       <main>
@@ -15,7 +14,7 @@ const Login = () => {
               <div className="home-menu">
                 <div className="text-center">
                   <h2 className="mt-1 mb-2 pb-1" style={{ color: "#D9D9D9" }}>
-                    Se connecter
+                    Create account
                   </h2>
                 </div>
                 <form>
@@ -35,19 +34,22 @@ const Login = () => {
                       placeholder="Password"
                     />
                   </div>
-                  <div className="btn btn-connection mb-3">Connexion</div>
-                  <Link to={"/forgot-password"}>
-                    <p className="text-end text-underline">
-                      <u style={{ color: "#D9D9D9" }}>Mot de passe oublié</u>
-                    </p>
-                  </Link>
+                  <div className="form-outline mb-3">
+                    <input
+                      type="password"
+                      id="form2Example33"
+                      className="form"
+                      placeholder="Confirmed Password"
+                    />
+                  </div>
+                  <div className="btn btn-connection mb-3">Enregistrer</div>
                   <div className="d-flex align-items-center justify-content-center pb-4">
                     <p className="mb-0 me-2" style={{ color: "#D9D9D9" }}>
                       Don't have an account?
                     </p>
-                    <Link to={"/signup"}>
+                    <Link to={"/login"}>
                       <button type="button" className="btn btn-danger">
-                        Create new
+                        Login
                       </button>
                     </Link>
                   </div>
@@ -61,4 +63,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;
