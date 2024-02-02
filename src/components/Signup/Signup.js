@@ -24,6 +24,8 @@ const Signup = () => {
                       id="form2Example11"
                       className="form"
                       placeholder="Email address"
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                      required
                     />
                   </div>
                   <div className="form-outline mb-3">
@@ -42,7 +44,11 @@ const Signup = () => {
                       placeholder="Confirmed Password"
                     />
                   </div>
-                  <div className="btn btn-connection mb-3">Enregistrer</div>
+                  <input
+                    type="submit"
+                    className="btn btn-connection mb-3"
+                    value="Enregistrer"
+                  />
                   <div className="d-flex align-items-center justify-content-center pb-4">
                     <p className="mb-0 me-2" style={{ color: "#D9D9D9" }}>
                       Don't have an account?
