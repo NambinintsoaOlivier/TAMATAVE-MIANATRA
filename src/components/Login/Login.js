@@ -25,6 +25,8 @@ const Login = () => {
                       id="form2Example11"
                       className="form"
                       placeholder="Email address"
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                      required
                     />
                   </div>
                   <div className="form-outline mb-3">
